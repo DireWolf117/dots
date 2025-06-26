@@ -1,0 +1,29 @@
+.Rectangle {
+  background-color: #000000;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.simple-rectangle {
+  min-width: 300px;
+  min-height: 200px;
+}
+
+.rectangle-box {
+  padding: 16px;
+}
+
+.rectangle-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.rectangle-time {
+  font-size: 32px;
+  font-weight: lighter;
+  color: #f0f0f0;
+}

@@ -1,0 +1,111 @@
+* {
+  font-family: "Inter", "SF Pro Display", "Roboto", sans-serif;
+  font-size: 14px;
+  min-height: 0;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#waybar  > box {
+  margin: 2px 2px 2px 2px; /* Adjust top, right, bottom, left margins as needed */
+  padding:0px;
+  border-radius: 2px;
+  background: #000000;
+  color: #ffffff;
+}
+
+#workspaces {
+  padding: 0px 0;
+}
+
+#workspaces button {
+  padding: 5px 10px;
+  color: #cccccc;
+}
+
+#workspaces button.active {
+  background: #222222;
+  border-left: 4px solid #ffffff;
+}
+
+#workspaces button:hover {
+  background: #333333;
+}
+
+#clock.time {
+  background: #000000;
+  color: #ffffff;
+  padding: 0;  /* Reduced padding */
+  margin-top: 0;
+  font-weight: bold;
+  font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
+}
+
+#clock.date {
+  background: #000000;
+  color: #ffffff;
+  padding: 0px 0;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
+}
+
+#pulseaudio {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#pulseaudio.percentage {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#pulseaudio.muted,
+#pulseaudio.percentage.muted {
+  color: #555555;
+}
+
+#tray {
+  padding: 5px 0;
+}
+
+#network {
+  padding: 2px 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#network.percentage {
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#network.disconnected,
+#network.percentage.disconnected {
+  color: #555555;
+  padding: 5px 0;
+}
+
+#custom-separator1, 
+#custom-separator2 {
+  color: #ffffff;
+  font-size: 10px;  /* Reverted to original size */
+  padding: 0;
+  margin: 0px 0;
+}
+
+#custom-time-of-day {
+  font-size: 20px;
+  padding-top: 4px;
+  margin: 0;
+  font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
+}
+
+/* Add this to ensure consistent spacing between modules */
+.modules-left, .modules-center, .modules-right {
+  margin: 0;
+  padding: 0;
+}
