@@ -23,6 +23,7 @@ require("lazy").setup({
 	require("plugins.lsp"),
 	require("plugins.snipe"),
 	require("plugins.trouble"),
+	require("plugins.projects"),
 	-- language plugins
 	require("languages.flutter"),
 })
