@@ -28,7 +28,7 @@ require("lazy").setup({
 })
 
 -- Color scheme setting
-vim.cmd([[colorscheme tokyonight-night]])
+vim.cmd([[colorscheme tokyonight-moon]])
 
 -- Custom command to print the current Copilot model
 vim.api.nvim_create_user_command("CopilotChatPrintModel", function()

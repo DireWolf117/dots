@@ -1,11 +1,26 @@
+-- In lua/plugins/flutter.lua
+
 return {
 	"nvim-flutter/flutter-tools.nvim",
-	lazy = true, -- Or you can set this to 'ft = "dart"' to only load on dart files
+	-- This is a great optimization! The plugin will only be loaded when you open a file of type 'dart'.
+	ft = "dart",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
-		"mfussenegger/nvim-dap", -- Required for debugging
-		"stevearc/dressing.nvim", -- Optional, for a nicer UI
+		"stevearc/dressing.nvim", -- Optional: for a nicer UI on things like `FlutterRename`
 	},
-	-- 'config = true' is the recommended shorthand for the default setup
-	config = true,
+	config = function()
+		require("flutter-tools").setup({
+			-- flutter-tools integrates with nvim-lspconfig automatically.
+			-- It will detect the `dartls` server that mason-lspconfig sets up
+			-- and enhance it with Flutter-specific capabilities (like the device selector, hot reload, etc).
+			lsp = {
+				-- You can override settings here if needed.
+				-- For example, to enable specific analyses.
+				-- settings = {
+				--   showTodos = true,
+				--   completeFunctionCalls = true,
+				-- }
+			},
+		})
+	end,
 }

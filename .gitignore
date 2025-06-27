@@ -14,7 +14,10 @@ tigervnc/
 GIMP/
 goa-1.0/
 github-copilot/
-Code/
+Code/*
+Code/User/*
+!Code/User/keybindings.json
+!Code/User/settings.json
 tmux/plugins/
 
 
