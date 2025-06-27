@@ -21,6 +21,8 @@ require("lazy").setup({
 	require("plugins.completions"),
 	require("plugins.alpha"),
 	require("plugins.lsp"),
+	require("plugins.snipe"),
+	require("plugins.trouble"),
 	-- language plugins
 	require("languages.flutter"),
 })
@@ -51,3 +53,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank({ higroup = "IncSearch", timeout = 200 })
 	end,
 })
+
+-- In your init.lua or a dedicated keymaps file
+vim.keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics<cr>", { silent = true, noremap = true })

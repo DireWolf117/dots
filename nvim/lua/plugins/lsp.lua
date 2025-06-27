@@ -184,7 +184,6 @@ return {
 			sqlls = {},
 			jsonls = {},
 			yamlls = {},
-
 			lua_ls = {
 				-- cmd = {...},
 				-- filetypes = { ...},
