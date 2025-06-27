@@ -179,6 +179,16 @@ return {
 					},
 				},
 			},
+			bashls = {
+				settings = {
+					bashls = {
+						format = {
+							enable = true,
+						},
+					},
+				},
+				filetypes = { "sh", "bash" },
+			},
 			html = { filetypes = { "html", "twig", "hbs" } },
 			cssls = {},
 			sqlls = {},

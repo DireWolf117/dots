@@ -8,9 +8,9 @@
   padding: 0;
 }
 
-#waybar  > box {
+#waybar > box {
   margin: 2px 2px 2px 2px; /* Adjust top, right, bottom, left margins as needed */
-  padding:0px;
+  padding: 0px;
   border-radius: 2px;
   background: #000000;
   color: #ffffff;
@@ -37,7 +37,7 @@
 #clock.time {
   background: #000000;
   color: #ffffff;
-  padding: 0;  /* Reduced padding */
+  padding: 0; /* Reduced padding */
   margin-top: 0;
   font-weight: bold;
   font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
@@ -89,10 +89,10 @@
   padding: 5px 0;
 }
 
-#custom-separator1, 
+#custom-separator1,
 #custom-separator2 {
   color: #ffffff;
-  font-size: 10px;  /* Reverted to original size */
+  font-size: 10px; /* Reverted to original size */
   padding: 0;
   margin: 0px 0;
 }
@@ -100,12 +100,15 @@
 #custom-time-of-day {
   font-size: 20px;
   padding-top: 4px;
+  padding-right: 4px;
   margin: 0;
   font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
 }
 
 /* Add this to ensure consistent spacing between modules */
-.modules-left, .modules-center, .modules-right {
+.modules-left,
+.modules-center,
+.modules-right {
   margin: 0;
   padding: 0;
 }

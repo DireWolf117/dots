@@ -19,7 +19,7 @@ return {
 			},
 			flutter_path = "/home/rialyze/Dev/flutter/bin/flutter", -- <-- this takes priority over the lookup
 			-- fvm = true,
-			-- flutter_lookup_cmd = "$(which flutter)", -- example "dirname $(which flutter)" or "asdf where flutter"
+			flutter_lookup_cmd = "$(which flutter)", -- example "dirname $(which flutter)" or "asdf where flutter"
 			-- flutter-tools integrates with nvim-lspconfig automatically.
 			-- It will detect the `dartls` server that mason-lspconfig sets up
 			lsp = {

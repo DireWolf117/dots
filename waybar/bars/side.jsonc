@@ -3,26 +3,35 @@
   "position": "left",
   "width": 47,
   "spacing": 0,
-  "modules-left": ["custom/time-of-day", "clock#time", "custom/separator1", "clock#date"],
-  "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["network", "network#percentage", "custom/separator2", "pulseaudio#percentage", "pulseaudio"],
-  
+  "modules-left": [
+    "custom/time-of-day",
+    "clock#time",
+    "custom/separator1",
+    "clock#date"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "network",
+    "network#percentage",
+    "custom/separator2",
+    "pulseaudio#percentage",
+    "pulseaudio"
+  ],
   "custom/time-of-day": {
     "exec": "~/.config/waybar/scripts/time-of-day.sh",
-    "interval": 30000,
+    "interval": 20,
     "tooltip": false
   },
-  
   "clock#time": {
     "format": "{:%H\n%M}",
     "tooltip": false
   },
-  
   "clock#date": {
     "format": "{:%d\n%m}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
-  
   "hyprland/workspaces": {
     "format": "{icon}",
     "on-click": "activate",
@@ -37,23 +46,22 @@
       "8": "八",
       "9": "九"
     },
-  
     "all-outputs": true,
     "sort-by-number": true
   },
-  
   "pulseaudio": {
     "format": "{icon}",
     "format-muted": "󰖁",
     "format-icons": {
-      "default": ["󰕾"]
+      "default": [
+        "󰕾"
+      ]
     },
     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
     "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
     "tooltip": false
   },
-  
   "pulseaudio#percentage": {
     "format": "{volume}",
     "format-muted": "-",
@@ -62,20 +70,24 @@
     "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
     "tooltip": false
   },
-  
   "network": {
     "format": "{icon}",
     "format-wifi": "{icon}",
     "format-ethernet": "█",
     "format-disconnected": "✕",
-    "format-icons": ["▁", "▂", "▃", "▅", "█"],
+    "format-icons": [
+      "▁",
+      "▂",
+      "▃",
+      "▅",
+      "█"
+    ],
     "tooltip-format": "{essid}",
     "tooltip-format-ethernet": "Ethernet Connected",
     "tooltip-format-disconnected": "Disconnected",
     "on-click": "foot --title=iwctl iwctl",
     "interval": 5
   },
-  
   "network#percentage": {
     "format": "{signalStrength}",
     "format-wifi": "{signalStrength}",
@@ -87,15 +99,12 @@
     "on-click": "foot --title=iwctl iwctl",
     "interval": 5
   },
-  
   "custom/separator1": {
     "format": "───",
     "tooltip": false
   },
-  
   "custom/separator2": {
     "format": "───",
     "tooltip": false
   }
 }
-
