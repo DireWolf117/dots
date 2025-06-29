@@ -15,6 +15,13 @@ return {
 		"hrsh7th/cmp-nvim-lsp",
 	},
 	config = function()
+		vim.diagnostic.config({
+			virtual_text = true, -- Show inline text
+			signs = true, -- Show signs in the gutter
+			underline = true, -- Underline problematic code
+			update_in_insert = false, -- Update diagnostics in insert mode
+			severity_sort = true, -- Sort diagnostics by severity
+		})
 		-- Brief aside: **What is LSP?**
 		--
 		-- LSP is an initialism you've probably heard, but might not understand what it is.
@@ -204,14 +211,7 @@ return {
 							callSnippet = "Replace",
 						},
 						runtime = { version = "LuaJIT" },
-						workspace = {
-							checkThirdParty = false,
-							library = {
-								"${3rd}/luv/library",
-								unpack(vim.api.nvim_get_runtime_file("", true)),
-							},
-						},
-						diagnostics = { disable = { "missing-fields" } },
+						diagnostics = { disable = { "missing-fields" }, globals = { "vim" } },
 						format = {
 							enable = false,
 						},

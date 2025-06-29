@@ -30,17 +30,9 @@ require("lazy").setup({
 })
 
 -- Color scheme setting
-vim.cmd([[colorscheme tokyonight-moon]])
+vim.cmd([[colorscheme tokyonight-night]])
 
--- Custom command to print the current Copilot model
-vim.api.nvim_create_user_command("CopilotChatPrintModel", function()
-	require("plenary.async").run(function()
-		local model = require("CopilotChat").resolve_model()
-		-- The model name is printed to the command line area
-		print("Current Copilot Model: " .. model)
-	end)
-end, {})
-
+-- tmux indicator that file is modified
 vim.api.nvim_create_autocmd({ "BufEnter", "BufFilePost", "BufModifiedSet" }, {
 	pattern = "*",
 	callback = function()
@@ -50,6 +42,7 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufFilePost", "BufModifiedSet" }, {
 	end,
 })
 
+-- highlight yanked text
 vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function()
 		vim.highlight.on_yank({ higroup = "IncSearch", timeout = 200 })

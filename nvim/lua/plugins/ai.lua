@@ -77,7 +77,7 @@ return {
 			},
 		},
 		keys = {
-			{ "<leader>cc", "<cmd>CopilotChat<CR><cmd>CopilotChatPrintModel<CR>", desc = "Copilot Chat" },
+			{ "<leader>cc", "<cmd>CopilotChat<CR>", desc = "Copilot Chat" },
 			{ "<leader>cr", "<cmd>CopilotChatReset<CR>", desc = "Copilot Chat Reset" },
 		},
 	},
