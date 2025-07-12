@@ -21,7 +21,7 @@ return {
 			-- for config options
 			open_win_override = {
 				-- title = "My Window Title",
-				border = "single", -- use "rounded" for rounded border
+				border = "none", -- use "rounded" for rounded border
 			},
 		},
 		sort = "last",

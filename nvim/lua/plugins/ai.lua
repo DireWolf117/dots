@@ -1,44 +1,4 @@
 return {
-	--{
-	--  "zbirenbaum/copilot.lua",
-	--  cmd = "Copilot",
-	--  event = "VimEnter",
-	--  config = function()
-	--    require("copilot").setup({
-	--      panel = {
-	--        enabled = true,
-	--        auto_refresh = false,
-	--        keymap = {
-	--          jump_prev = "[[",
-	--          jump_next = "]]",
-	--          accept = "<CR>",
-	--          refresh = "gr",
-	--          open = "<M-CR>",
-	--        },
-	--      },
-	--      suggestion = {
-	--        enabled = true,
-	--        -- Disable auto-trigger
-	--        auto_trigger = false,
-	--        debounce = 75,
-	--        keymap = {
-	--          -- Use these keys to manually trigger and cycle through suggestions
-	--          next = "<M-l>",
-	--          prev = "<M-h>",
-	--          -- Use Tab to accept the suggestion
-	--          accept = "<Tab>",
-	--          dismiss = "<Esc>",
-	--        },
-	--      },
-	--      filetypes = {
-	--        yaml = true,
-	--        markdown = true,
-	--        -- Add any other filetypes you need
-	--        ["*"] = true, -- Enable for all filetypes by default
-	--      },
-	--    })
-	--  end,
-	--},
 	{
 		"supermaven-inc/supermaven-nvim",
 		config = function()
@@ -79,6 +39,7 @@ return {
 		keys = {
 			{ "<leader>cc", "<cmd>CopilotChat<CR>", desc = "Copilot Chat" },
 			{ "<leader>cr", "<cmd>CopilotChatReset<CR>", desc = "Copilot Chat Reset" },
+			{ "<leader>lm", "<cmd>CopilotChatModels<CR>", desc = "Print Copilot Models" },
 		},
 	},
 }

@@ -34,7 +34,7 @@ window-padding-y = 0
 # # Any line beginning with a # is a comment. It's not possible to put
 # # a comment after a config option, since it would be interpreted as a
 # # part of the value. For example, this will have a value of "#123abc":
-# background = #05020f
+background = #05020f
 #
 # # Empty values are used to reset config keys to default.
 # key =
@@ -44,4 +44,5 @@ window-padding-y = 0
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-theme = tokyonight
+theme = Dracula+
+# theme = rose-pine

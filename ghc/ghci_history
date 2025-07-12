@@ -1,0 +1,16 @@
+:q
+ls
+stop
+quit
+QUIt
+UIT
+exit
+foldr (+) 1 10
+foldr (+) 1 [1..10]
+foldr (+) [1..10]
+:break foldr (-) 0 [1..10]
+foldr (-) 0 [1..10]
+foldl (-) 0 [1..10]
+foldl (+) 0 [1..10]
+foldr (+) 0 [1..10]
+foldr (+) 0 10

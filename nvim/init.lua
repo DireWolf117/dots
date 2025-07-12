@@ -13,11 +13,12 @@ rtp:prepend(lazypath)
 
 require("lazy").setup({
 	require("plugins.colortheme"),
-	require("plugins.neotree"),
+	-- require("plugins.neotree"),
 	require("plugins.treesitter"),
 	require("plugins.telescope"),
 	require("plugins.ai"),
 	require("plugins.formatting"),
+	-- require("plugins.completions"),
 	require("plugins.completions"),
 	require("plugins.alpha"),
 	require("plugins.lsp"),
@@ -25,22 +26,19 @@ require("lazy").setup({
 	require("plugins.trouble"),
 	require("plugins.projects"),
 	require("plugins.symbols"),
+	require("plugins.autopairs"),
+	require("plugins.oil"),
+	require("plugins.lspkind"),
+	require("plugins.incline"),
+	require("plugins.undotree"),
+	-- not finished yet. this plugin still needs a lot of fixinig
+	-- require("plugins.codecompanion"),
 	-- language plugins
 	require("languages.flutter"),
 })
 
 -- Color scheme setting
 vim.cmd([[colorscheme tokyonight-night]])
-
--- tmux indicator that file is modified
-vim.api.nvim_create_autocmd({ "BufEnter", "BufFilePost", "BufModifiedSet" }, {
-	pattern = "*",
-	callback = function()
-		local modified = vim.o.modified and " [+]" or ""
-		vim.o.titlestring = " " .. vim.fn.expand("%") .. modified
-		vim.o.title = true
-	end,
-})
 
 -- highlight yanked text
 vim.api.nvim_create_autocmd("TextYankPost", {

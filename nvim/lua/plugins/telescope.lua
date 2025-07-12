@@ -60,9 +60,11 @@ return {
 				find_files = {
 					file_ignore_patterns = { "node_modules", "%.git", "%.venv" },
 					hidden = true,
+					cwd = vim.loop.cwd(),
 				},
 				live_grep = {
 					file_ignore_patterns = { "node_modules", "%.git", "%.venv" },
+					cwd = vim.loop.cwd(),
 					additional_args = function(_)
 						return { "--hidden" }
 					end,
