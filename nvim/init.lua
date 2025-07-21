@@ -16,7 +16,7 @@ require("lazy").setup({
 	-- require("plugins.neotree"),
 	require("plugins.treesitter"),
 	require("plugins.telescope"),
-	require("plugins.ai"),
+	-- require("plugins.ai"),
 	require("plugins.formatting"),
 	-- require("plugins.completions"),
 	require("plugins.completions"),
