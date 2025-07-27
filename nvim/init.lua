@@ -12,13 +12,13 @@ local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
 require("lazy").setup({
-	require("plugins.colortheme"),
+	-- require("plugins.colortheme"),
+	require("plugins.nightfox"),
 	-- require("plugins.neotree"),
 	require("plugins.treesitter"),
 	require("plugins.telescope"),
 	-- require("plugins.ai"),
 	require("plugins.formatting"),
-	-- require("plugins.completions"),
 	require("plugins.completions"),
 	require("plugins.alpha"),
 	require("plugins.lsp"),
@@ -38,8 +38,8 @@ require("lazy").setup({
 })
 
 -- Color scheme setting
-vim.cmd([[colorscheme tokyonight-night]])
-
+-- vim.cmd([[colorscheme carbonfox]])
+--vim.cmd([[colorscheme tokyonight-night]])
 -- highlight yanked text
 vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function()

@@ -13,7 +13,7 @@
     "hyprland/workspaces"
   ],
   "modules-right": [
-    "network",
+    "network#icon",
     "network#percentage",
     "custom/separator2",
     "pulseaudio#percentage",
@@ -70,17 +70,13 @@
     "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
     "tooltip": false
   },
-  "network": {
+  "network#icon": {
     "format": "{icon}",
     "format-wifi": "{icon}",
     "format-ethernet": "█",
     "format-disconnected": "✕",
     "format-icons": [
-      "▁",
-      "▂",
-      "▃",
-      "▅",
-      "█"
+      "🌐︎"
     ],
     "tooltip-format": "{essid}",
     "tooltip-format-ethernet": "Ethernet Connected",
