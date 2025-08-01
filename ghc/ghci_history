@@ -1,0 +1,26 @@
+lsd
+merge [[1,7,13,  . . .  ],[0,6,12,  . . .  ],[2,8,14,  . . .  ]]
+. . .
+],[2,8,14,
+. . .
+],[0,6,12,
+. . .
+merge [[1,7,13,
+:load main.hs
+:load main.hs
+:q
+ls
+stop
+quit
+QUIt
+UIT
+exit
+foldr (+) 1 10
+foldr (+) 1 [1..10]
+foldr (+) [1..10]
+:break foldr (-) 0 [1..10]
+foldr (-) 0 [1..10]
+foldl (-) 0 [1..10]
+foldl (+) 0 [1..10]
+foldr (+) 0 [1..10]
+foldr (+) 0 10

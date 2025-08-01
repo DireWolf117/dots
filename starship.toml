@@ -1,0 +1,92 @@
+# Disable all modules by default
+format = " $username::$directory $character"
+
+# Don't add a newline at the start
+add_newline = false
+
+# Simple character configuration
+[character]
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](red)"
+vimcmd_symbol = "[❮](green)"
+
+# Basic username display
+[username]
+format = "[$user](purple)"
+show_always = true
+
+# Basic directory display
+[directory]
+truncation_length = 0       # Disable truncation completely
+truncation_symbol = ""
+style = "green"
+fish_style_pwd_dir_length = 0  # Disable fish style path
+use_logical_path = true     # Follow symlinks to their logical path
+home_symbol = "~"           # Use tilde for home directory
+format = "[$path]($style)"  # Explicitly use full path format
+truncate_to_repo = false    # Never truncate to repository root
+read_only = " 🔒"          # Add a lock symbol for read-only directories
+
+# Disable all other modules
+[aws]
+disabled = true
+[azure]
+disabled = true
+[battery]
+disabled = true
+[conda]
+disabled = true
+[dart]
+disabled = true
+[docker_context]
+disabled = true
+[elixir]
+disabled = true
+[elm]
+disabled = true
+[git_branch]
+disabled = true
+[git_commit]
+disabled = true
+[git_state]
+disabled = true
+[git_status]
+disabled = true
+[golang]
+disabled = true
+[hg_branch]
+disabled = true
+[java]
+disabled = true
+[julia]
+disabled = true
+[memory_usage]
+disabled = true
+[nim]
+disabled = true
+[nix_shell]
+disabled = true
+[nodejs]
+disabled = true
+[package]
+disabled = true
+[perl]
+disabled = true
+[php]
+disabled = true
+[python]
+disabled = true
+[ruby]
+disabled = true
+[rust]
+disabled = true
+[swift]
+disabled = true
+[terraform]
+disabled = true
+[vagrant]
+disabled = true
+[zig]
+disabled = true
+[cmd_duration]
+disabled = true
