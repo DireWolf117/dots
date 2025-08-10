@@ -51,9 +51,10 @@
   font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
 }
 
-#pulseaudio {
-  margin-top: 0;
+#pulseaudio.icon {
+  margin-top: -2px;
   margin-bottom: 10px;
+  font-size: 18px;
   font-weight: bold;
   font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
 }
@@ -75,17 +76,17 @@
 }
 
 #network.icon {
-  margin-right: 0px;
+  margin-right: 7px;
   font-size: 17px;
   padding: 0px 5px;
-  margin-bottom: 0;
+  margin-bottom: 4px;
   margin-top: 0;
 }
 
 #network.percentage {
   padding: 0;
   margin-bottom: 0;
-  margin-top: 0;
+  margin-top: -2px;
   font-weight: bold;
   font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
 }
@@ -105,10 +106,9 @@
 }
 
 #custom-time-of-day {
-  font-size: 20px;
+  font-size: 32px;
   padding-top: 4px;
-  padding-right: 5px;
-  margin: 0;
+  margin-bottom: -2px;
   font-family: "JetBrainsMono Nerd Font", "Symbols Nerd Font", monospace;
 }
 

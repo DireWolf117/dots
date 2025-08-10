@@ -17,7 +17,7 @@
     "network#percentage",
     "custom/separator2",
     "pulseaudio#percentage",
-    "pulseaudio"
+    "pulseaudio#icon"
   ],
   "custom/time-of-day": {
     "exec": "~/.config/waybar/scripts/time-of-day.sh",
@@ -49,22 +49,20 @@
     "all-outputs": true,
     "sort-by-number": true
   },
-  "pulseaudio": {
-    "format": "{icon}",
-    "format-muted": "󰖁",
-    "format-icons": {
-      "default": [
-        "󰕾"
-      ]
-    },
+  "pulseaudio#percentage": {
+    "format": "{volume}",
+    "format-muted": "-",
     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
     "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
     "tooltip": false
   },
-  "pulseaudio#percentage": {
-    "format": "{volume}",
-    "format-muted": "-",
+  "pulseaudio#icon": {
+    "format": "{icon}",
+    "format-muted": "󰖁",
+    "format-icons": {
+      "default": ["󰕿", "󰖀", "󰕾"]
+    },
     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
     "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
     "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
@@ -75,9 +73,11 @@
     "format-wifi": "{icon}",
     "format-ethernet": "█",
     "format-disconnected": "✕",
-    "format-icons": [
-      "🖧"
-    ],
+    "format-icons": {
+      "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+      "ethernet": "🖧",
+      "disconnected": "✕"
+    },
     "tooltip-format": "{essid}",
     "tooltip-format-ethernet": "Ethernet Connected",
     "tooltip-format-disconnected": "Disconnected",
