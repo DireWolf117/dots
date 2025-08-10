@@ -76,7 +76,7 @@
     "format-ethernet": "█",
     "format-disconnected": "✕",
     "format-icons": [
-      "🌐︎"
+      "🖧"
     ],
     "tooltip-format": "{essid}",
     "tooltip-format-ethernet": "Ethernet Connected",
